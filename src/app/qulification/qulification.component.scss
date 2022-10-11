@@ -1,0 +1,161 @@
+
+@import url('http://fonts.cdnfonts.com/css/rapier-zero-hollow');
+
+/*  Qualification*/
+.home-qualification {
+    margin: 10% 0px 0px 10px;
+    transition-duration: 1s;
+}
+
+.home-qualification p:nth-child(1) {
+    font-size: 150px;
+    color: rgb(48, 181, 234);
+    font-family: 'Rapier Zero Hollow', sans-serif;
+    font-family: 'Rapier Zero', sans-serif;
+    text-shadow: 1px 1px 30px  blue ;
+    transition-duration: 1s;
+}
+.home-qualification p:nth-child(1):hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px  rgb(17, 255, 0)  ;
+}
+
+.home-qualification-div {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.home-qualification-div2 {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.home-qualification-div3 {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.home-qulification1 {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.home-qulification1:hover {
+    color: rgb(30, 15, 231);
+}
+
+
+.home-qulification2 {
+    color: rgb(168, 172, 175);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.home-qulification3 {
+    position: absolute;
+    margin: 0px 0px 0px 60%;
+    width: 150px;
+    height: 150px;
+}
+.home-qulification4 {
+    display: none;
+}
+
+
+
+
+
+
+/* media query.... */
+@media only screen and (max-width: 800px) {
+    @import url('http://fonts.cdnfonts.com/css/rapier-zero-hollow');
+/*  Qualification*/
+.home-qualification {
+    position: relative;
+    margin: 20% 0px 0px 5%;
+    transition-duration: 1s;
+}
+
+.home-qualification p:nth-child(1) {
+    font-size: 40px;
+    color: rgb(48, 181, 234);
+    font-family: 'Rapier Zero Hollow', sans-serif;
+    font-family: 'Rapier Zero', sans-serif;
+    text-shadow: 1px 1px 30px  blue ;
+    transition-duration: .5s;
+}
+.home-qualification p:nth-child(1):hover {
+
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 15px  rgb(0, 0, 255) ;
+}
+
+.home-qualification-div {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.home-qualification-div2 {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+}
+
+.home-qualification-div3 {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 80%;
+    height: 110px;
+    transition-duration: 1s;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.home-qulification1 {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.home-qulification2 {
+    width: 150px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.home-qulification3 {
+    position: absolute;
+    margin: -5% 0px 0px 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.home-qulification4 {
+    display: block;
+}
+
+.home-qualification p:nth-child(2) div:nth-child(2) {
+    font-size: 100px;
+}
+
+
+
+
+
+}

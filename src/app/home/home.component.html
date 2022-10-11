@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<link rel="shortcut icon" type="image/x-icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpCaObElJTx6tgtVssco5u83LEOyraooKKw&usqp=CAU" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+
+
+
+
+
+    <div class="home">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    <!-- profile -->
+    <app-profile></app-profile>
+    <br/>
+    <br/>
+    <!-- About -->
+    <app-about></app-about>
+
+    <!-- qulification -->
+    <app-qulification></app-qulification>
+
+    <!-- Skills -->
+    <app-skills></app-skills>
+
+
+
+    <!-- Projects -->
+    <app-projects></app-projects>
+
+    <!-- event -->
+    <app-events></app-events>
+
+
+    <!-- Contact -->
+    <app-contacts></app-contacts>
+
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+
+
+
+
+
+
+
+    <!-- js -->
+    <script>
+        function showUserCreateBox() {
+            Swal.fire({
+                title: 'Contact Me',
+                html:
+                    `
+                    <div><div/>
+        <input id="fname" class="swal2-input" placeholder="Your Name">
+        <input id="email" class="swal2-input" placeholder=" Your Email">
+        <input id="write"  style="height: 100px;" class="swal2-input" placeholder="Write a Message">`,
+                focusConfirm: false,
+                preConfirm: () => {
+                    userCreate();
+                }
+            })
+        }
+
+        function userCreate() {
+            const fname = document.getElementById("fname").value;
+            const email = document.getElementById("email").value;
+            const write = document.getElementById("write").value;
+
+            const http = new XMLHttpRequest();
+            http.open("POST", "https://postdart.herokuapp.com/api/help");
+            http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            http.send(JSON.stringify({
+                "fullName": fname,
+                "contactNumber": 9898989898,
+                "email": email,
+                "write": write,
+            }));
+
+            http.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    const userData = JSON.parse(this.response);
+                    Swal.fire(userData['message']);
+                    getUser();
+                }
+            };
+        }
+    </script>
+
+
+    <!-- sweetalert    JS File-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+
+</div>

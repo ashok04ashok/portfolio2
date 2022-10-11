@@ -1,0 +1,228 @@
+@import url('http://fonts.cdnfonts.com/css/deconditioned-reflex');
+
+/*Skills  */
+.home-Skill {
+    
+    position: relative;
+    margin: 10% 0px 0px 10px;
+    transition-duration: 1s;
+    z-index: 2;
+}
+
+.home-Skill_p {
+    
+    font-size: 100px;
+    color: rgb(17, 192, 255);
+    text-shadow: 2px 2px 30px rgb(36, 14, 201);
+    font-family: 'Deconditioned Reflex', sans-serif;
+    transition-duration: .5s;
+    z-index: 2;
+}
+
+.home-Skill_p:hover {
+    color: rgb(7, 7, 7);
+    text-shadow: 2px 2px 30px rgb(0, 255, 68);
+}
+
+.home-Skill_ul {
+    z-index:2;
+    width: 90%;
+    height: 60%;
+}
+
+.home-Skill_ul h1 {
+    font-size: 20px;
+    color: rgb(123, 129, 134);
+}
+
+.home-Skill-flex div:hover {
+    border-radius: 0px 0px 10px 0px;
+    box-shadow: 5px 5px 100px rgb(27, 10, 217);
+}
+
+.home-Skill-flex div {
+    display: inline-flex;
+}
+
+.home-Skill-flex div {
+    margin: 40px 0px 0px 10px;
+    height: auto;
+    width: 300px;
+}
+
+
+.home-Skill_ul li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 20px;
+    font-family: 'Hind', sans-serif;
+    font-weight: bolder;
+    color: rgb(240, 240, 240);
+    transition-duration: 1s;
+}
+.home-Skill_img {
+    margin: 0px 0px 0px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    padding: 2px;
+    box-shadow: 2px 2px 5px rgb(4, 23, 236);
+    transition-duration: 1s;
+}
+
+.home-Skill_ul li:hover .home-Skill_img:hover {
+    box-shadow: 8px 2px 5px rgb(33, 199, 249);
+}
+
+
+.home-Skill_p_img{
+    z-index: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: 17% 0px 0px 0%;
+    border-radius: 100px;  
+    animation: myfirst  20s infinite ;
+    // animation-direction: alternate;
+  }
+  .home-Skill_p_img:hover{
+    box-shadow: 1px 1px 30px rgb(34, 232, 94);
+  }
+  .home-Skill_p_img:hover .home-Skill-flex div:hover {
+background-color: none;
+    
+  }
+  @keyframes myfirst {
+    0%   { left: 0px; top: 0px;}
+    25%  { left: 70%; top: 0px;}
+    50%  { left: 70%; top: 700px;}
+    75%  {left: 0px; top: 700px;}
+    100% { left: 0px; top: 0px;}
+    }
+
+
+    .home-Skill_p_img2{
+        z-index: 0;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        margin: 17% 0px 0px 0%;
+        border-radius: 100px;  
+        animation: myfirst 15s infinite;
+        // animation-direction: alternate;
+      }
+      .home-Skill_p_img1:hover{
+        box-shadow: 1px 1px 30px rgb(34, 232, 94);
+      }
+      .home-Skill_p_img:hover .home-Skill-flex div:hover {
+    background-color: none;
+        
+      }
+      @keyframes myfirst {
+        0%   { left: 0px; top: 0px;}
+        25%  { left: 70%; top: 0px;}
+        50%  { left: 70%; top: 700px;}
+        75%  {left: 0px; top: 700px;}
+        100% { left: 0px; top: 0px;}
+        }
+    
+
+
+
+
+
+
+/* media query.... */
+
+@media only screen and (max-width: 800px) {
+
+
+    /*Skills  */
+    .home-Skill {
+        margin: 15% 0px 0px 10%;
+        transition-duration: 1s;
+    }
+
+    .home-Skill_p {
+        font-size: 30px;
+        color: rgb(17, 192, 255);
+        text-shadow: 2px 2px 30px rgb(36, 14, 201);
+        font-family: 'Deconditioned Reflex', sans-serif;
+        transition-duration: .5s;
+        z-index: 2;
+    }
+    .home-Skill_p:hover {
+        color: rgb(7, 7, 7);
+        text-shadow: 2px 2px 30px rgb(0, 255, 68);
+    }
+
+    .home-Skill_ul {
+        width: 90%;
+        height: auto;
+    }
+
+    .home-Skill_ul li {
+        margin: 2px;
+        font-size: 10px;
+        display: inline-flex;
+        list-style-type: disc;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        color: rgb(192, 187, 187);
+        transition-duration: .5s;
+    }
+    
+
+    .home-Skill_ul li:hover {
+        font-size: 10px;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 10px;
+    }
+
+    .home-Skill_ul h1 {
+        font-size: 15px;
+        color: rgb(123, 129, 134);
+    }
+    .home-Skill-flex div {
+        display: inline-flex;
+    }
+    .home-Skill-flex div:hover {
+        border-radius: 0px 0px 10px 0px;
+        box-shadow: 5px 5px 100px rgb(27, 10, 217);
+    }
+    
+    .home-Skill_img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .home-Skill_p_img2{
+        display: none;
+    }
+
+    .home-Skill_p_img2{
+        z-index: 0;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        margin: 17% 0px 0px 0%;
+        border-radius: 100px;  
+        animation: myfirst 10s infinite;
+      }
+      .home-Skill_p_img1:hover{
+        box-shadow: 1px 1px 30px rgb(34, 232, 94);
+      }
+      .home-Skill_p_img:hover .home-Skill-flex div:hover {
+    background-color: none;
+        
+      }
+      @keyframes myfirst {
+        0%   { left: 0px; top: 0px;}
+        25%  { left: 10%; top: 0px;}
+        50%  { left: 20%; top: 700px;}
+        75%  {left: 0px; top: 700px;}
+        100% { left: 0px; top: 0px;}
+        }
+    
+}

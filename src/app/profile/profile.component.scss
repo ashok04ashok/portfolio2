@@ -1,0 +1,366 @@
+@import url('http://fonts.cdnfonts.com/css/meltland');
+
+/* profile */
+.home-about {
+    margin-top: 160px;
+    margin-left: 30px;
+    transition-duration: 1s;
+    width: 50%;
+}
+
+.home-about p:nth-child(1) {
+    z-index: 2;
+    margin: 0px 0px 0px 10px;
+    font-size: 40px;
+    font-family: 'Tangerine', serif;
+    text-shadow: 1px 2px 4px rgb(18, 107, 3);
+    color: rgb(200, 198, 198);
+    font-weight: bold;
+}
+
+.home-about p:nth-child(1) span {
+    width: 600px;
+    z-index: 5;
+    margin: 0px 0px 0px 20px;
+    font-size: 80px;
+    font-family: 'Meltland', sans-serif;
+    text-shadow: 1px 2px 4px rgb(91, 76, 226);
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+}
+
+.home-about p:nth-child(2) {
+    z-index: 2;
+    margin: 0px 0px 0px 10px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 253, 253);
+    font-weight: bold;
+}
+
+.nav-pro {
+    z-index: 5;
+    position: absolute;
+    margin: -210px 0px 0px 680px;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    box-shadow: 10px 10px 40px 10px rgba(21, 0, 138, 0.493);
+    transition-duration: 20s;
+
+}
+
+
+.nav-pro:hover {
+    transition-duration: 0s;
+    margin: -210px 0px 0px 700px;
+    box-shadow: 0px 0px 10px 20px #69edff;
+    z-index: 0;
+}
+
+.nav-pro2 {
+    z-index: 1;
+    position: absolute;
+    margin: -270px 0px 0px 650px;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 200px;
+    transition-duration: 1s;
+}
+
+.nav-pro3 {
+    z-index: 0;
+    position: absolute;
+    margin: -60px 0px 0px 300px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 200px;
+    transition-duration: 0s;
+}
+
+.nav-pro3:hover {
+    transition-duration: 10s;
+    z-index: 2;
+    margin: -230px 0px 0px 700px;
+
+
+}
+
+
+/*Glow Button  */
+
+.glow-on-hover {
+    z-index: 1;
+    margin-left: 20px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+    padding: 10px 30px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: greenyellow
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+
+
+
+
+/* media query */
+
+@media only screen and (max-width: 800px) {
+
+
+    /* profile */
+    .home-about {
+        margin-top: 160px;
+        margin-left: 30px;
+        transition-duration: 1s;
+        width: 50%;
+        height: 100px;
+    }
+
+    .home-about p:nth-child(1) {
+        position: absolute;
+        margin: 9% 0px 0px 4%;
+        font-size: 12px;
+        font-weight: bold;
+        z-index: 2;
+        font-family: 'Tangerine', serif;
+        text-shadow: 1px 2px 4px rgb(18, 107, 3);
+        color: rgb(200, 198, 198);
+        font-weight: bold;
+    }
+
+    .home-about p:nth-child(1) span {
+        position: absolute;
+        margin: -2px 0px 0px 10px;
+        width: 200px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        z-index: 5;
+        font-family: 'Meltland', sans-serif;
+        text-shadow: 1px 2px 4px rgb(91, 76, 226);
+        color: rgb(248, 248, 248);
+        font-weight: bold;
+    }
+
+    .home-about p:nth-child(2) {
+        position: absolute;
+        margin: 15% 0px 0px 2%;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        z-index: 2;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 253, 253);
+    font-weight: bold;
+    }
+
+    .nav-pro {
+        position: absolute;
+        margin: -80% 0px 0px 15%;
+        width: 150px;
+        height: 150px;
+        padding: 1px;
+        border-radius: 200px;
+        z-index: 5;
+        box-shadow: 10px 10px 40px 10px rgba(21, 0, 138, 0.493);
+        transition-duration: 20s;
+    }
+
+    .nav-pro:hover {
+        margin: -80% 0px 0px 25%;
+        width: 130px;
+        height: 130px;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px black;
+        border-radius: 10px;
+        transition-duration: 0s;
+    box-shadow: 0px 0px 10px 10px #002aff;
+    z-index: 0;
+    }
+
+
+    
+.nav-pro2 {
+    z-index: 1;
+    position: absolute;
+    margin: -370px 0px 0px 50px;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 200px;
+    // background-color: #002aff;
+    transition-duration: 1s;
+}
+
+.nav-pro3 {
+    z-index: 0;
+    position: absolute;
+    margin: -370px 0px 0px -80px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 200px;
+    transition-duration: 0s;
+}
+
+.nav-pro3:hover {
+    transition-duration: 10s;
+    z-index: 2;
+    margin: -370px 0px 0px 50px;
+
+
+}
+
+    .home-glow {
+        position: relative;
+        margin: 55% 0px 0px 10px !important;
+    }
+
+    /*Glow Button  */
+
+    .glow-on-hover {
+        margin-left: 20px;
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bolder;
+        padding: 10px 30px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(10px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 30s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: greenyellow
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+
+    }
+}

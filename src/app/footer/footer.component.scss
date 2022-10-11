@@ -1,0 +1,210 @@
+/*footer  */
+.footbar1 {
+    margin-top: 20px;
+    height: 200px;
+    padding: 10px;
+    background-color: black;
+}
+
+.footbar1 p:nth-child(1) {
+    margin-left: 70%;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.footbar1 p:nth-child(2) {
+    margin-left: 70%;
+    margin-top: 1px;
+    color: aliceblue;
+}
+
+.footbar1 div {
+    margin: -30px 0px 0px 20%;
+}
+
+.footbar1 div p {
+    margin-left: 30%;
+}
+
+.footbar1 div img {
+    z-index:1;
+    margin-left: 30px;
+    margin-top: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 2px 20px rgb(15, 197, 210);
+}
+
+.footbar1 div img:hover {
+    box-shadow: 0px 0px 20px rgb(85, 255, 38);
+    // width: 60px;
+    // height: 60px;
+}
+
+.footer-name{
+    position: absolute !important;
+    margin: 2% 0px 0px 80% !important;
+    width: 100px !important;
+}
+
+.land-gif3 {
+    box-shadow: 0px 2px 1px rgb(2, 11, 246) !important;
+    z-index: 0;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 4% 0px 0px 0%;
+    animation: mymove  10s infinite ;
+    animation-delay: -11s;
+  }
+  
+  @keyframes mymove {
+    from {left: -50px;}
+    to {left: 700px;}
+  }
+
+
+
+/*Glow Button  */
+
+.glow-on-hover {
+    margin-left: 20px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+    padding: 10px 30px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: greenyellow
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+
+
+/* media query.... */
+
+@media only screen and (max-width: 800px) {
+
+/*footer  */
+.footbar1 {
+    margin-top: 20px;
+    height: 200px;
+    padding: 10px;
+    background-color: black;
+}
+
+.footbar1 p:nth-child(1) {
+    margin-left: 50%;
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 10px;
+}
+
+.footbar1 p:nth-child(2) {
+    margin-left: 50%;
+    margin-top: 1px;
+    font-size: 10px;
+    color: aliceblue;
+}
+
+.footbar1 div {
+    margin: 30px 0px 0px 10%;
+}
+
+.footbar1 div p {
+    margin-left: 20%;
+}
+
+.footbar1 div img {
+    margin-left: 10%;
+    margin-top: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition-duration: .5s;
+}
+
+.footbar1 div img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-name{
+    position: absolute !important;
+    margin: -15% 0px 0px 5% !important;
+    width: 100px !important;
+}
+.footbar1 .land-gif3 {
+display:none;
+}
+
+
+
+.land-gif3 {
+display: none;
+}
+}
